@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_counting_rooms"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.lebanissa.countingrooms.CountingRoomsActivity">
+
+    <Button
+        android:text="@string/north"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/North"
+        android:onClick="north (CountingRoomsActivity)"
+        android:layout_below="@+id/West" />
+
+    <Button
+        android:text="@string/east"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="17dp"
+        android:layout_marginEnd="17dp"
+        android:id="@+id/East"
+        android:layout_alignBaseline="@+id/West"
+        android:layout_alignBottom="@+id/West"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="east (CountingRoomsActivity)" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="19dp"
+        android:layout_marginStart="19dp"
+        android:id="@+id/West"
+        android:text="@string/west"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="west (CountingRoomsActivity)" />
+
+    <TextView
+        android:text="@string/_0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Zero"
+        android:layout_alignBaseline="@+id/West"
+        android:layout_alignBottom="@+id/West"
+        android:layout_alignRight="@+id/South"
+        android:layout_alignEnd="@+id/South" />
+
+    <Button
+        android:text="South"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:id="@+id/South"
+        android:onClick="south (CountingRoomsActivity)"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/West"
+        android:foregroundGravity="center"
+        android:layout_alignRight="@+id/button2"
+        android:layout_alignEnd="@+id/button2"
+        tools:ignore="HardcodedText,RtlHardcoded,UnknownId" />
+
+</RelativeLayout>
